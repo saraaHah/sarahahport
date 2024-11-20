@@ -1,0 +1,166 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #e8f5e9; /* Super soft green background */
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.8); /* White background with transparency for blur effect */
+    backdrop-filter: blur(10px); /* Blur effect */
+    color: #333; /* Dark text for contrast */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333; /* Dark text for logo */
+}
+
+header .navbar {
+    display: flex;
+    list-style: none;
+}
+
+header .navbar li {
+    margin: 0 15px;
+}
+
+header .navbar a {
+    text-decoration: none;
+    color: #333; /* Dark text for navbar links */
+    transition: color 0.3s;
+}
+
+header .navbar a:hover {
+    color: #4caf50; /* Green on hover */
+}
+
+header .top-btn .nav-btn {
+    text-decoration: none;
+    background: #4caf50; /* Green for button */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+header .top-btn .nav-btn:hover {
+    background: #388e3c; /* Darker green on hover */
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background: #c8e6c9; /* Soft green background for home section */
+}
+
+.home-content {
+    max-width: 600px;
+    text-align: center;
+    margin: 20px;
+}
+
+.home-content h1 {
+    font-size: 2.5rem;
+    color: #388e3c; /* Darker green for heading */
+}
+
+.home-content p {
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+.home-content .btn {
+    display: inline-block;
+    background: #388e3c; /* Darker green for button */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.home-content .btn:hover {
+    background: #2e7d32; /* Even darker green on hover */
+}
+
+.home-img img {
+    border-radius: 50%;
+    border: 5px solid #388e3c; /* Darker green border */
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    background: #fff;
+    color: #444;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-content .heading {
+    font-size: 2rem;
+    color: #388e3c; 
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.about img {
+    border: 3px solid #c8e6c9; 
+    border-radius: 10px;
+}
+
+
+.portfolio {
+    padding: 50px 20px;
+    background: #c8e6c9; 
+    text-align: center;
+}
+
+.portfolio .heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #388e3c; 
+}
+
+.portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.portfolio .row img {
+    width: 100%;
+    border: 3px solid #c8e6c9; 
+    border-radius: 10px;
+}
+
+.contact {
+    padding: 50px 20px;
+    background: #fff
+
